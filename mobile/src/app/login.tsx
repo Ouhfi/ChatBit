@@ -123,10 +123,10 @@ export default function LoginScreen() {
     if (!isValid) {
       return;
     }
-
-    console.log('Login form is valid');
-    console.log('Email:', email.trim());
-
+      console.log('login from is valid');
+      console.log('Email:',email.trim());
+      
+      router.replace('/inbox');
     // Backend authentication will be connected here later.
   };
 
@@ -165,7 +165,7 @@ export default function LoginScreen() {
        */
       console.log('Google authentication successful');
 
-      router.replace('/');
+      router.replace('/inbox');
     } catch (error: any) {
       console.log('Google Sign-In error:', error);
 

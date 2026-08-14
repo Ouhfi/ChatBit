@@ -16,6 +16,13 @@ export default function RootLayout() {
           headerShown: false,
         }}
       />
+
+      <Stack.Screen
+      name="inbox"
+      options={{
+        headerShown: false, 
+      }}
+      />
     </Stack>
   );
 }
