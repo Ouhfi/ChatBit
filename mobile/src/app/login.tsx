@@ -30,6 +30,7 @@ export default function LoginScreen() {
    * This Web Client ID comes from:
    * Google Cloud Console → Google Auth Platform → Clients
    */
+  
   useEffect(() => {
     GoogleSignin.configure({
       webClientId:

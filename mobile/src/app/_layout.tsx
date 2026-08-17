@@ -1,8 +1,12 @@
-import { Stack } from 'expo-router';
+import { Stack, Redirect } from 'expo-router';
 
 export default function RootLayout() {
   return (
-    <Stack>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Stack.Screen
         name="login"
         options={{
@@ -18,10 +22,38 @@ export default function RootLayout() {
       />
 
       <Stack.Screen
-      name="inbox"
-      options={{
-        headerShown: false, 
-      }}
+        name="inbox"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="chat"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="stats"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="profile"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="conversation"
+        options={{
+          headerShown: false,
+        }}
       />
     </Stack>
   );
